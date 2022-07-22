@@ -1,14 +1,4 @@
-
-
- document.addEventListener("click",function (e){
-   if(e.target.classList.contains("gallery-item")){
-   	  const src = e.target.getAttribute("src");
-   	  document.querySelector(".modal-img").src = src;
-   	  const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-   	  myModal.show();
-   }
- })
- const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
